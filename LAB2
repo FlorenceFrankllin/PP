@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-/*
+
+  //01. Faça um programa que leia um número inteiro e o imprima.
+  
 int main()
-{
-    
-    //01. Faça um programa que leia um número inteiro e o imprima.
-    
+{      
     int x;
 
     printf("Digite um numero inteiro:");
@@ -15,9 +14,12 @@ int main()
 
     return 0;
 }
-*/
 
-/*int main()
+/*
+
+ //02. Faça um programa que leia um número real e o imprima.
+ 
+int main()
 {
     
      //02. Faça um programa que leia um número real e o imprima.
@@ -29,9 +31,9 @@ int main()
     printf("Numero inteiro: %0.2f",x);
     return 0;
 }
-*/
-/*
-03. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
+
+
+//03. Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
 
 int main()
 {
@@ -43,9 +45,10 @@ int main()
     
    return 0; 
 }
-*/
-/*
-04. Leia um número real e imprima o resultado do quadrado desse número.
+
+
+
+//04. Leia um número real e imprima o resultado do quadrado desse número.
 
  main()
 {
@@ -54,14 +57,13 @@ printf("Digite um numero real:");
 scanf("%f",&Numero);
 printf("O quadrado do numero real %.2f e:",pow(Numero,2));
 
-
 return 0;
 }
-*/
-/*
-05. Leia um número real e imprima a quinta parte deste número.
 
-main()
+
+//05. Leia um número real e imprima a quinta parte deste número.
+
+int main()
 {
     float Numero;
     printf("Digite um numero real:");
@@ -393,26 +395,9 @@ int main ()
     printf("O valor de área em hectares convertidos em metros quadrados e: \n%.2f",AM);
     return 0;
 }
-*/
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-
-int main ()
-{
-    float N1, N2, N3; //N1=Numero 1, N2=numero2, N3=Numero.
-    printf("Digite tres valores: ");
-    scanf("%f,%f,%f",&N1,&N2,&N3);
-    printf("A soma dos quadrados dos 3 numeros:");
-    
-    return 0;
-}
-
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
 //28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
+
 int main ()
 {
     float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
@@ -543,690 +528,7 @@ int main()
     return 0;
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
-int main ()
-{
-    float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
-    printf("Digite três valores: \n");
-    scanf("%f%f%f",&N1,&N2,&N3);
-    Soma=pow(N1,2)+pow(N2,2)+ pow(N3,2);
-    printf("A soma dos quadrados dos 3 numeros:%.2f",Soma);
-    
-    return 0;
-}
-
-// 29. Leia quatro notas, calcule a média aritmética e imprima o resultado.
-
-int main ()
-{
-    float N1, N2, N3 ,N4, MA; //N1=Numero 1, N2=numero2, N3=Numero, MA= Media aritmética
-    printf("Digite quatro notas: \n");
-    scanf("%f%f%f%f",&N1,&N2,&N3,&N4);
-    MA=((N1+N2+N3+N4)/4);
-    printf("A Media aritmética das quatros notas e :%.2f",MA);
-    
-    return 0;
-}
-
-// 30. Leia um valor em real e a cotação do dólar. Em seguida,
-imprima o valor correspondente em dólares.
-
-
-int main()
-{
-    float R, D=5.27, RE; //R= real, D= dólar, RE=resultado.
-    printf("Digite um valor:\n");
-    scanf("%f",&R);
-    RE=R*D;
-    printf("O valor correspondente e:%.2f",RE);
-    
-    return 0;
-}
-
-//31. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-
-int main()
-{
-    int  N,NA,NS;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   printf("O Numero antecessor e:\n%d\n",NA);
-   printf("O Numero sucessor e:\n%d",NS);
-   
-    return 0;
-}
-
-//32. Leia um número inteiro e imprima a soma do sucessor de 
-seu triplo com o antecessor de seu dobro.
-
-int main()
-{
-    int  N,NA,NS, Soma;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   Soma=NA+NS;
-    printf("Soma do sucessor com o antecessor e:\n%d",Soma);
-   
-    return 0;
-}
-
-//33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
-
-int main()
-{
-    float L,A; //L=Lado, A=Area.
-    
-    printf("Digite o tamanho do lado de um quadrado:\n");
-    scanf("\n%f",&L);
-    A=L*L;
-    printf("A área do quadrado e:\n%.2f",A);
-   
-    return 0;
-}
-
-//34. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
-A área do círculo é *raio2, considere  = 3.141592.
-
-int main()
-{
-    float RC, AC, PI=3.141592; //RC= Raio de um Circulo, AC= Area do circulo,PI=ao valor de PI.
-    printf("Digite o valor Raio do circulo:\n");
-    scanf("\n%f",&RC);
-    AC=PI*pow(RC,2);
-    printf("A área do circulo e:\n%f",AC);
-   
-    return 0;
-}
-
-// 35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
-ℎ𝑖𝑝𝑜𝑡𝑒𝑛𝑢𝑠𝑎=√𝑎2+b2. Faça um programa que receba os valores de a e b e calcule o valor da
-hipotenusa através da equação. Imprima o resultado dessa operação.
-
-int main()
-{
-    float A, B,R; // A=cateto cateto do um triângulo, B=cateto do um triângulo R= resultado hipotenusa.
-    printf("Digite o valor dos catetos A e B:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-//36. Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro. O volume de um
-cilindro circular é calculado por meio da seguinte fórmula: V =  * raio2 * altura, onde  =3.141592.
-*/
-
-int main()
-{
-    float A, R VC ; // A= altura,R=raio, VC= Volume do cilindro. 
-    printf("Digite a altura e o raio do cilindro:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
-int main ()
-{
-    float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
-    printf("Digite três valores: \n");
-    scanf("%f%f%f",&N1,&N2,&N3);
-    Soma=pow(N1,2)+pow(N2,2)+ pow(N3,2);
-    printf("A soma dos quadrados dos 3 numeros:%.2f",Soma);
-    
-    return 0;
-}
-
-// 29. Leia quatro notas, calcule a média aritmética e imprima o resultado.
-
-int main ()
-{
-    float N1, N2, N3 ,N4, MA; //N1=Numero 1, N2=numero2, N3=Numero, MA= Media aritmética
-    printf("Digite quatro notas: \n");
-    scanf("%f%f%f%f",&N1,&N2,&N3,&N4);
-    MA=((N1+N2+N3+N4)/4);
-    printf("A Media aritmética das quatros notas e :%.2f",MA);
-    
-    return 0;
-}
-
-// 30. Leia um valor em real e a cotação do dólar. Em seguida,
-imprima o valor correspondente em dólares.
-
-
-int main()
-{
-    float R, D=5.27, RE; //R= real, D= dólar, RE=resultado.
-    printf("Digite um valor:\n");
-    scanf("%f",&R);
-    RE=R*D;
-    printf("O valor correspondente e:%.2f",RE);
-    
-    return 0;
-}
-
-//31. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-
-int main()
-{
-    int  N,NA,NS;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   printf("O Numero antecessor e:\n%d\n",NA);
-   printf("O Numero sucessor e:\n%d",NS);
-   
-    return 0;
-}
-
-//32. Leia um número inteiro e imprima a soma do sucessor de 
-seu triplo com o antecessor de seu dobro.
-
-int main()
-{
-    int  N,NA,NS, Soma;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   Soma=NA+NS;
-    printf("Soma do sucessor com o antecessor e:\n%d",Soma);
-   
-    return 0;
-}
-
-//33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
-
-int main()
-{
-    float L,A; //L=Lado, A=Area.
-    
-    printf("Digite o tamanho do lado de um quadrado:\n");
-    scanf("\n%f",&L);
-    A=L*L;
-    printf("A área do quadrado e:\n%.2f",A);
-   
-    return 0;
-}
-
-//34. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
-A área do círculo é *raio2, considere  = 3.141592.
-
-int main()
-{
-    float RC, AC, PI=3.141592; //RC= Raio de um Circulo, AC= Area do circulo,PI=ao valor de PI.
-    printf("Digite o valor Raio do circulo:\n");
-    scanf("\n%f",&RC);
-    AC=PI*pow(RC,2);
-    printf("A área do circulo e:\n%f",AC);
-   
-    return 0;
-}
-
-// 35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
-ℎ𝑖𝑝𝑜𝑡𝑒𝑛𝑢𝑠𝑎=√𝑎2+b2. Faça um programa que receba os valores de a e b e calcule o valor da
-hipotenusa através da equação. Imprima o resultado dessa operação.
-
-int main()
-{
-    float A, B,R; // A=cateto cateto do um triângulo, B=cateto do um triângulo R= resultado hipotenusa.
-    printf("Digite o valor dos catetos A e B:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-//36. Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro. O volume de um
-cilindro circular é calculado por meio da seguinte fórmula: V =  * raio2 * altura, onde  =3.141592.
-*/
-
-int main()
-{
-    float A, R VC ; // A= altura,R=raio, VC= Volume do cilindro. 
-    printf("Digite a altura e o raio do cilindro:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
-int main ()
-{
-    float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
-    printf("Digite três valores: \n");
-    scanf("%f%f%f",&N1,&N2,&N3);
-    Soma=pow(N1,2)+pow(N2,2)+ pow(N3,2);
-    printf("A soma dos quadrados dos 3 numeros:%.2f",Soma);
-    
-    return 0;
-}
-
-// 29. Leia quatro notas, calcule a média aritmética e imprima o resultado.
-
-int main ()
-{
-    float N1, N2, N3 ,N4, MA; //N1=Numero 1, N2=numero2, N3=Numero, MA= Media aritmética
-    printf("Digite quatro notas: \n");
-    scanf("%f%f%f%f",&N1,&N2,&N3,&N4);
-    MA=((N1+N2+N3+N4)/4);
-    printf("A Media aritmética das quatros notas e :%.2f",MA);
-    
-    return 0;
-}
-
-// 30. Leia um valor em real e a cotação do dólar. Em seguida,
-imprima o valor correspondente em dólares.
-
-
-int main()
-{
-    float R, D=5.27, RE; //R= real, D= dólar, RE=resultado.
-    printf("Digite um valor:\n");
-    scanf("%f",&R);
-    RE=R*D;
-    printf("O valor correspondente e:%.2f",RE);
-    
-    return 0;
-}
-
-//31. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-
-int main()
-{
-    int  N,NA,NS;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   printf("O Numero antecessor e:\n%d\n",NA);
-   printf("O Numero sucessor e:\n%d",NS);
-   
-    return 0;
-}
-
-//32. Leia um número inteiro e imprima a soma do sucessor de 
-seu triplo com o antecessor de seu dobro.
-
-int main()
-{
-    int  N,NA,NS, Soma;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   Soma=NA+NS;
-    printf("Soma do sucessor com o antecessor e:\n%d",Soma);
-   
-    return 0;
-}
-
-//33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
-
-int main()
-{
-    float L,A; //L=Lado, A=Area.
-    
-    printf("Digite o tamanho do lado de um quadrado:\n");
-    scanf("\n%f",&L);
-    A=L*L;
-    printf("A área do quadrado e:\n%.2f",A);
-   
-    return 0;
-}
-
-//34. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
-A área do círculo é *raio2, considere  = 3.141592.
-
-int main()
-{
-    float RC, AC, PI=3.141592; //RC= Raio de um Circulo, AC= Area do circulo,PI=ao valor de PI.
-    printf("Digite o valor Raio do circulo:\n");
-    scanf("\n%f",&RC);
-    AC=PI*pow(RC,2);
-    printf("A área do circulo e:\n%f",AC);
-   
-    return 0;
-}
-
-// 35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
-ℎ𝑖𝑝𝑜𝑡𝑒𝑛𝑢𝑠𝑎=√𝑎2+b2. Faça um programa que receba os valores de a e b e calcule o valor da
-hipotenusa através da equação. Imprima o resultado dessa operação.
-
-int main()
-{
-    float A, B,R; // A=cateto cateto do um triângulo, B=cateto do um triângulo R= resultado hipotenusa.
-    printf("Digite o valor dos catetos A e B:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-//36. Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro. O volume de um
-cilindro circular é calculado por meio da seguinte fórmula: V =  * raio2 * altura, onde  =3.141592.
-*/
-
-int main()
-{
-    float A, R VC ; // A= altura,R=raio, VC= Volume do cilindro. 
-    printf("Digite a altura e o raio do cilindro:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
-int main ()
-{
-    float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
-    printf("Digite três valores: \n");
-    scanf("%f%f%f",&N1,&N2,&N3);
-    Soma=pow(N1,2)+pow(N2,2)+ pow(N3,2);
-    printf("A soma dos quadrados dos 3 numeros:%.2f",Soma);
-    
-    return 0;
-}
-
-// 29. Leia quatro notas, calcule a média aritmética e imprima o resultado.
-
-int main ()
-{
-    float N1, N2, N3 ,N4, MA; //N1=Numero 1, N2=numero2, N3=Numero, MA= Media aritmética
-    printf("Digite quatro notas: \n");
-    scanf("%f%f%f%f",&N1,&N2,&N3,&N4);
-    MA=((N1+N2+N3+N4)/4);
-    printf("A Media aritmética das quatros notas e :%.2f",MA);
-    
-    return 0;
-}
-
-// 30. Leia um valor em real e a cotação do dólar. Em seguida,
-imprima o valor correspondente em dólares.
-
-
-int main()
-{
-    float R, D=5.27, RE; //R= real, D= dólar, RE=resultado.
-    printf("Digite um valor:\n");
-    scanf("%f",&R);
-    RE=R*D;
-    printf("O valor correspondente e:%.2f",RE);
-    
-    return 0;
-}
-
-//31. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-
-int main()
-{
-    int  N,NA,NS;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   printf("O Numero antecessor e:\n%d\n",NA);
-   printf("O Numero sucessor e:\n%d",NS);
-   
-    return 0;
-}
-
-//32. Leia um número inteiro e imprima a soma do sucessor de 
-seu triplo com o antecessor de seu dobro.
-
-int main()
-{
-    int  N,NA,NS, Soma;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   Soma=NA+NS;
-    printf("Soma do sucessor com o antecessor e:\n%d",Soma);
-   
-    return 0;
-}
-
-//33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
-
-int main()
-{
-    float L,A; //L=Lado, A=Area.
-    
-    printf("Digite o tamanho do lado de um quadrado:\n");
-    scanf("\n%f",&L);
-    A=L*L;
-    printf("A área do quadrado e:\n%.2f",A);
-   
-    return 0;
-}
-
-//34. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
-A área do círculo é *raio2, considere  = 3.141592.
-
-int main()
-{
-    float RC, AC, PI=3.141592; //RC= Raio de um Circulo, AC= Area do circulo,PI=ao valor de PI.
-    printf("Digite o valor Raio do circulo:\n");
-    scanf("\n%f",&RC);
-    AC=PI*pow(RC,2);
-    printf("A área do circulo e:\n%f",AC);
-   
-    return 0;
-}
-
-// 35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
-ℎ𝑖𝑝𝑜𝑡𝑒𝑛𝑢𝑠𝑎=√𝑎2+b2. Faça um programa que receba os valores de a e b e calcule o valor da
-hipotenusa através da equação. Imprima o resultado dessa operação.
-
-int main()
-{
-    float A, B,R; // A=cateto cateto do um triângulo, B=cateto do um triângulo R= resultado hipotenusa.
-    printf("Digite o valor dos catetos A e B:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-//36. Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro. O volume de um
-cilindro circular é calculado por meio da seguinte fórmula: V =  * raio2 * altura, onde  =3.141592.
-*/
-
-int main()
-{
-    float A, R VC ; // A= altura,R=raio, VC= Volume do cilindro. 
-    printf("Digite a altura e o raio do cilindro:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-//28. Faça a leitura de três valores e apresente como resultado a soma dos quadrados dos três valores lidos.
-/*
-int main ()
-{
-    float N1, N2, N3, Soma; //N1=Numero 1, N2=numero2, N3=Numero, Soma=resultado dos quadrados dos três valores.
-    printf("Digite três valores: \n");
-    scanf("%f%f%f",&N1,&N2,&N3);
-    Soma=pow(N1,2)+pow(N2,2)+ pow(N3,2);
-    printf("A soma dos quadrados dos 3 numeros:%.2f",Soma);
-    
-    return 0;
-}
-
-// 29. Leia quatro notas, calcule a média aritmética e imprima o resultado.
-
-int main ()
-{
-    float N1, N2, N3 ,N4, MA; //N1=Numero 1, N2=numero2, N3=Numero, MA= Media aritmética
-    printf("Digite quatro notas: \n");
-    scanf("%f%f%f%f",&N1,&N2,&N3,&N4);
-    MA=((N1+N2+N3+N4)/4);
-    printf("A Media aritmética das quatros notas e :%.2f",MA);
-    
-    return 0;
-}
-
-// 30. Leia um valor em real e a cotação do dólar. Em seguida,
-imprima o valor correspondente em dólares.
-
-
-int main()
-{
-    float R, D=5.27, RE; //R= real, D= dólar, RE=resultado.
-    printf("Digite um valor:\n");
-    scanf("%f",&R);
-    RE=R*D;
-    printf("O valor correspondente e:%.2f",RE);
-    
-    return 0;
-}
-
-//31. Leia um número inteiro e imprima o seu antecessor e o seu sucessor.
-
-int main()
-{
-    int  N,NA,NS;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   printf("O Numero antecessor e:\n%d\n",NA);
-   printf("O Numero sucessor e:\n%d",NS);
-   
-    return 0;
-}
-
-//32. Leia um número inteiro e imprima a soma do sucessor de 
-seu triplo com o antecessor de seu dobro.
-
-int main()
-{
-    int  N,NA,NS, Soma;
-    printf("Digite um valor:\n");
-    scanf("%d",&N);
-   NA= --N;
-   NS= N + 1 + 1;
-   Soma=NA+NS;
-    printf("Soma do sucessor com o antecessor e:\n%d",Soma);
-   
-    return 0;
-}
-
-//33. Leia o tamanho do lado de um quadrado e imprima como resultado a sua área.
-
-int main()
-{
-    float L,A; //L=Lado, A=Area.
-    
-    printf("Digite o tamanho do lado de um quadrado:\n");
-    scanf("\n%f",&L);
-    A=L*L;
-    printf("A área do quadrado e:\n%.2f",A);
-   
-    return 0;
-}
-
-//34. Leia o valor do raio de um círculo e calcule e imprima a área do círculo correspondente.
-A área do círculo é *raio2, considere  = 3.141592.
-
-int main()
-{
-    float RC, AC, PI=3.141592; //RC= Raio de um Circulo, AC= Area do circulo,PI=ao valor de PI.
-    printf("Digite o valor Raio do circulo:\n");
-    scanf("\n%f",&RC);
-    AC=PI*pow(RC,2);
-    printf("A área do circulo e:\n%f",AC);
-   
-    return 0;
-}
-
-// 35. Sejam a e b os catetos de um triângulo, onde a hipotenusa é obtida pela equação:
-ℎ𝑖𝑝𝑜𝑡𝑒𝑛𝑢𝑠𝑎=√𝑎2+b2. Faça um programa que receba os valores de a e b e calcule o valor da
-hipotenusa através da equação. Imprima o resultado dessa operação.
-
-int main()
-{
-    float A, B,R; // A=cateto cateto do um triângulo, B=cateto do um triângulo R= resultado hipotenusa.
-    printf("Digite o valor dos catetos A e B:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-//36. Leia a altura e o raio de um cilindro circular e imprima o volume do cilindro. O volume de um
-cilindro circular é calculado por meio da seguinte fórmula: V =  * raio2 * altura, onde  =3.141592.
-*/
-
-int main()
-{
-    float A, R VC ; // A= altura,R=raio, VC= Volume do cilindro. 
-    printf("Digite a altura e o raio do cilindro:\n");
-    scanf("%f%f",&A,&B);
-    R=sqrt(pow(A,2)+pow(B,2));
-    
-    printf("o Resultado dessa operação e:\n%.2f",R);
-   
-    return 0;
-}
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-/*
 //37. Faça um programa que leia o valor de um produto e imprima o valor com desconto, tendo
 em vista que o desconto foi de 12%.
 
@@ -1525,8 +827,9 @@ int main(void) {
 
 //53. Faça um programa para ler as dimensões de um terreno (comprimento c e largura l), bem
 como o preço do metro de tela p. Imprima o custo para cercar este mesmo terreno com tela.
-*/
-int main(void) {
+
+
+int main() {
     float C, L,CU,P;
     printf("Digite o comprimento do terreno: ");
     scanf("%f", &C);
@@ -1540,7 +843,7 @@ int main(void) {
     printf("O custo para cercar o terreno eh: %.2f", CU);
     return 0;
 }
-
+*/
 
 
 
