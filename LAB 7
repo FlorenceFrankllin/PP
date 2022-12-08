@@ -1,0 +1,564 @@
+/*
+01.Faça um programa que leia uma string e a imprima.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal() {
+    char str[100];
+
+    fgets(str,100, stdin);
+    printf("%s", str);
+}
+
+
+/*
+02.Faça um programa que conte o número de 1's que aparecem em uma string. Exemplo:
+"0011001" -> 3
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  inti, contagem =0;
+
+  fgets(str,100, stdin);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if(str[i] =='1')
+    {
+contagem++;
+    }
+  }
+  printf("String tem %d 1's\n", count);
+}
+
+
+/*
+03.Faça um programa que receba uma palavra e a imprima de trás-para-frente.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i;
+
+  fgets(str,100, stdin);
+  for(i =0; str[i] !='\0'; i++)
+  {
+  }
+  for (i--; i >= 0; i--)
+  {
+    printf("%c", str[i]);
+  }
+  printf("\n");
+}
+
+
+
+/*
+04.Faça um programa que receba uma palavra e calcule quantas vogais (a, e, i, o, u) possui essa 
+palavra.  Entre  com  um  caractere  (vogal  ou  consoante)  e  substitua  todas  as  vogais  da  palavra 
+dada por esse caractere. 
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100], c;
+  inti, contagem =0;
+
+  fgets(str,100, stdin);
+  scanf("%c", &c);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if(str[i] =='a'|| str[i] =='e'|| str[i] =='i'|| str[i] =='o'|| str[i] =='u')
+    {
+      str[i] = c;
+contagem++;
+    }
+  }
+  printf("A string tem %d vogais\n", count);
+  printf("%s", str);
+}
+
+
+
+/*
+05.Escreva um programa para converter uma cadeia de caracteres de letras maiúsculas em letras 
+minúsculas. Dica: some 32 dos caracteres cujo código ASCII está entre 65 e 90.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i;
+
+  fgets(str,100, stdin);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if(str[i] >='A'&& str[i] <='Z')
+    {
+      str[i] += 32;
+    }
+  }
+  printf("%s", str);
+}
+
+
+/*
+06.Leia uma cadeia de caracteres e converta todos os caracteres para maiúscula. Dica: subtraia 
+32 dos caracteres cujo código ASCII está entre 97 e 122.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i;
+
+  fgets(str,100, stdin);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if(str[i] >='a'&& str[i] <='z')
+    {
+      str[i] -= 32;
+    }
+  }
+  printf("%s", str);
+}
+
+
+
+/*
+07.Leia um vetor contendo letras de uma frase inclusive os espaços em branco. Retirar os 
+espaços em branco do vetor e depois escrever o vetor resultante.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i, j;
+
+  fgets(str,100, stdin);
+  for(i =0, j =0; str[i] !='\0'; i++)
+  {
+    if (str[i] != ' ')
+    {
+      str[j] = str[i];
+      j++;
+    }
+  }
+str[j] ='\0';
+  printf("%s", str);
+}
+
+
+/*
+08.Faça um programa em que troque todas as ocorrências de uma letra L1 pela letra L2 em 
+uma corda. A string e as letras L1 e L2 devem ser fornecidas pelo usuário.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100], l1, l2;
+  int i;
+
+  fgets(str,100, stdin);
+  scanf("%c%c", &l1, &l2);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if (str[i] == l1)
+    {
+      str[i] = l2;
+    }
+  }
+  printf("%s", str);
+}
+
+
+/*
+09.Faça  um  programa  que  preencha  uma  matriz  de  string  com  os  modelos  de  cinco  carros
+(exemplos de modelos: Fusca, Gol, Vectra, etc.). Em seguida, preencha um vetor com o consumo
+desses carros, isto é, quantos quilômetros cada um deles faz com um litro de combustível.
+Calcule e mostre:
+(a) O modelo de carro mais econômico;
+(b)  Quantos  litros  de  combustível  cada  um  dos  carros  cadastrados  consome  para
+percorrer uma distância de 1.000 quilômetros.
+*/
+
+
+#include <stdio.h>
+#include <string.h>
+
+vazioprincipal()
+{
+  char str[5][100];
+  floatcontras[5], maior =0;
+  int i, j, pos;
+
+  for (i = 0; i < 5; i++)
+  {
+    printf("Digite o modelo do carro %d:\n", i + 1);
+    fgets(str[i], 100, stdin);
+str[i][strlen(str[i]) -1] ='\0';
+
+    printf("Digite o consumo do carro %d:\n", i + 1);
+    scanf("%f", &cons[i]);
+    printf("\n");
+    getchar();
+  }
+
+  for (i = 0; i < 5; i++)
+  {
+    if (cons[i] > maior)
+    {
+maior = contras[i];
+      pos = i;
+    }
+  }
+  printf("O carro mais economico e : %s\n", str[pos]);
+
+  for (i = 0; i < 5; i++)
+  {
+    printf("O carro%sconsome%.2flitros para percorrer 1000km\n", str[i],1000/ cons[i]);
+  }
+}
+
+
+/*
+10.Ler o nome e o valor de uma determinada mercadoria de uma loja. Sabendo que o desconto
+para pagamento à vista é de 10% sobre o valor total, calcular o valor a ser pago à vista. Escrever
+o nome da mercadoria, o valor total, o valor do desconto e o valor a ser pago à vista.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char nome[100];
+  float valor, desconto, valor_a_vista;
+
+  fgets(nome,100, stdin);
+  scanf("%f", &valor);
+  desconto = valor * 0.1;
+  valor_a_vista = valor - desconto;
+  printf("\n Nome:%s\n", nome);
+  printf("Valor total: %.2f\n", valor);
+  printf("Desconto: %.2f\n", desconto);
+  printf("A vista: %.2f\n", valor_a_vista);
+}
+
+
+/*
+11.Escreva  um  programa  que  recebe  uma  string  S  e  inteiros  não-negativos  I  e  J  e  imprima  o 
+segmento S[I.. J].
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i, j;
+
+  fgets(str,100, stdin);
+  scanf("%d%d", &i, &j);
+  para(; i <= j; i++)
+  {
+    printf("%c", str[i]);
+  }
+  printf("\n");
+}
+
+
+/*
+12.O código de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo 
+de substituição na qual cada letra do texto  substituída por outra, que se apresenta no alfabeto 
+abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, 'A' seria
+substituído por 'D', 'B' se tornaria 'E', e assim por diante. Implemente um programa que faça
+uso desse Código de César (3 posições), entre com uma string e retorne a string codificada.  
+Exemplo: 
+Corda: a ligeira raposa marrom saltou sobre o cachorro cansado
+Nova string: D OLJHLUD UDSRVD PDUURP VDOWRX VREUH R FDFKRUUR FDQVDGR
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str[100];
+  int i;
+
+  fgets(str,100, stdin);
+  for(i =0; str[i] !='\0'; i++)
+  {
+    if(str[i] >='A'&& str[i] <='Z')
+    {
+str[i] = (str[i] -'A'+3) %26+'A';
+    }
+    elseif(str[i] >='a'&& str[i] <='z')
+    {
+str[i] = (str[i] -'a'+3) %26+'a';
+    }
+  }
+  printf("%s", str);
+}
+
+
+/*
+13.Faça um programa que, dada uma string, diga se ela é um palíndromo ou não. Lembrando 
+que um palíndromo é uma palavra que tenha a propriedade de poder ser lida tanto da direita 
+para a esquerda como da esquerda para a direita.  
+Exemplo: 
+ovo 
+arara 
+Socorram-me, subi no ônibus em Marrocos 
+Anotaram a data da maratona
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal() {
+  char str[100], str_without_special_characters[100];
+  int i, j, is_palindrome = 1;
+
+  fgets(str,100, stdin);
+
+  for(i =0; str[i] !='\0'; i++) {}
+
+  for(i--, j =0; i >=0; i--) {
+    if((str[i] >='a'&& str[i] <='z') || (str[i] >='A'&& str[i] <='Z')) {
+      str_without_special_characters[j] = str[i];
+      j++;
+    }
+  }
+
+  for (i = 0; i < j; i++) {
+    se (
+      (str_without_special_characters[i] != str_without_special_characters[j - i - 1])
+      && (str_without_special_characters[i] != str_without_special_characters[j - i - 1] + 32)
+      && (str_without_special_characters[i] != str_without_special_characters[j - i - 1] - 32)
+      ) {
+      is_palindrome = 0;
+      quebrar;
+    }
+  }
+
+  if (is_palindrome) {
+    printf("Uma string e um palindromo\n");
+  } mais {
+    printf("String nao e um palindromo\n");
+  }
+}
+ 
+
+
+/*
+14.Implemente  um programa que leia duas strings,  str1 e str2, e  um valor inteiro positivo  N. 
+Concatene não mais que N caracteres da string str2 à string str1 e termine str1 com '\0'.
+*/
+
+
+#include <stdio.h>
+
+vazioprincipal()
+{
+  char str1[100], str2[100];
+  int i, j, n;
+
+  fgets(str1.100, stdin);
+  fgets(str2.100, stdin);
+  scanf("%d", &n);
+  for(i =0; str1[i] !='\0'; i++)
+  {
+  }
+  for (j = 0; j < n; j++)
+  {
+    str1[i + j] = str2[j];
+  }
+str1[i + j] ='\0';
+  printf("%s", str1);
+}
+
+
+/*
+15.Faça um programa que contenha um menu com as seguintes opções:
+(a) Ler uma string S1 (tamanho máximo 20 caracteres);
+(b) Imprimir o tamanho da string S1;
+(c)  Comparar  a  string  S1  com  uma  nova  string  S2  fornecida  pelo  usuário  e  imprimir  o
+resultado da comparação;
+(d)  Concatenar  a  string  S1  com  uma  nova  string  S2  e  imprimir  na  tela  o  resultado  da
+concatenação;
+(e) Imprimir a string S1 de forma reversa;
+(f) Contar quantas vezes um dado caractere aparece na string S1. Esse caractere desse
+ser informado pelo usuário;
+(g) Substituir a primeira ocorrência do caractere C1 da string S1 pelo caractere C2. SO
+caracteres C1 e C2 serão lidos pelo usuário;
+(h)  Verificar  se  uma  string  S2  é  substring  de  S1.  A  string  S2  deve  ser  informada  pelo
+usuário;
+(i) Retornar uma substring da string S1. Para isso o usuário deve informar a partir de qual
+posição deve ser criada a substring e qual é o tamanho da substring.
+*/
+
+
+#include <stdio.h>
+#include <string.h>
+
+vazioprincipal()
+{
+  charstr1[20], str2[20], c1, c2, op, substring[20];
+  int i, count = 0, posisao, tamanho;
+
+  fazer
+  {    
+    printf("\n(a) Ler uma string S1 (tamanho máximo 20 caracteres); \n");
+    printf("(b) Imprimir o tamanho da string S1; \n");
+    printf("(c) Comparar a string S1 com uma nova string S2 fornecida pelo usuário e imprimir o resultado da comparação; \n");
+    printf("(d) Concatenar a string S1 com uma nova string S2 e imprimir na tela o resultado da concatenação; \n");
+    printf("(e) Imprimir a string S1 de forma reversa; \n");
+    printf("(f) Contar quantas vezes um dado caractere aparece na string S1. Esse caractere desse ser informado pelo usuário; \n");
+    printf("(g) Substituir a primeira ocorrência do caractere C1 da string S1 pelo caractere C2. Os caracteres C1 e C2 serão lidos pelo usuário; \n");
+    printf("(h) Verificar se uma string S2 é substring de S1. A string S2 deve ser informada pelo usuário; \n");
+    printf("(i) Retornar uma substring da string S1. Para isso o usuário deve informar a partir de qual posição deve ser criada a substring e qual é o tamanho da substring. \n");
+    printf("Digite a opção desejada:\n");
+    scanf("%c", &op);
+    getchar();
+
+    switch (op)
+    {
+    caso «a»:
+      printf("\n Digite uma cadeia de caracteres S1:\n");
+      fgets(str1.20, stdin);
+str1[strlen(str1) -1] ='\0';
+      quebrar;
+    caso «b»:
+      printf("O tamanho da string S1 é%d\n",strlen(str1));
+      quebrar;
+    caso «c»:
+      printf("\nDigite uma string S2:");
+      fgets(str2.20, stdin);
+      printf(strcmp(str1, str2) ? " As strings sao diferentes\n":"As strings sao iguais\n");
+      quebrar;
+    case'd':
+      printf("\nDigite uma string S2:");
+      fgets(str2.20, stdin);
+      printf("O resultado da concatenação é\"%s\"\n",strcat(str1, str2));
+      quebrar;
+    caso «e»:
+      for (i = strlen(str1) - 1; i >= 0; i--)
+      {
+        printf("%c", str1[i]);
+      }
+      printf("\n");
+      quebrar;
+    caso «f»:
+      printf("\nDigite o caractere: ");
+      scanf("%c", &c1);
+      for(i =0; str1[i] !='\0'; i++)
+      {
+        if (str1[i] == c1)
+        {
+contagem++;
+        }
+      }
+      printf("\n O caractere%caparece%dvezes na string S1\n", c1, count);
+      quebrar;
+    caso'g':
+      printf("\nDigite o caractere C1: ");
+      scanf("%c", &c1);
+      printf("\nDigite o caractere C2: ");
+      scanf("%c", &c2);
+      for(i =0; str1[i] !='\0'; i++)
+      {
+        if (str1[i] == c1)
+        {
+          str1[i] = c2;
+          quebrar;
+        }
+      }
+      printf("S1 atualizada é:%s\n", str1);
+      quebrar;
+    caso'h':
+      printf("\nDigite uma string S2:");
+      fgets(str2.20, stdin);
+      if(strstr(str1, str2) !=NULL)
+      {
+        printf("A string S2 é substring de S1\n");
+      }
+      mais
+      {
+        printf("A string S2 não é substring de S1\n");
+      }
+      quebrar;
+    caso'i':
+      printf("\nDigite a posição: ");
+      scanf("%d", &posisao);
+      printf("\nDigite o tamanho: ");
+      scanf("%d", &tamanho);
+      
+      for (i = posisao; i <= tamanho; i++)
+      {
+        substring[i] = str1[posisao + i];
+      }
+substring[i +1] ='\0';
+
+      printf("A substring é%s\n", substring);
+      quebrar;
+    }
+  } while (op >= 'a' || op <= 'i');
+}
+
+
+/*
+16.Faça um programa que encontre o conjunto de 5 dígitos consecutivos na sequência abaixo 
+que gere o maior produto:
+*/
+
+#include <stdio.h>
+
+vazioprincipal()
+{  
+  char str[1000];
+  int i, j, Produto, Produto_Max = 0;
+
+  fgets(str,1000, stdin);
+
+  for(i =0; str[i +4] !='\0'&& str[i +4] !='\n'; i++)
+  {
+    Produto = 1;
+    for (j = i; j < i + 5; j++)
+    {
+      Produto *= (str[j] - 48);
+    }
+    if (Produto > Produto_Max)
+    {
+      Produto = Produto_Max;
+    }
+  }
+  printf("O maior produto é: %d\n", max_prod); 
+}
